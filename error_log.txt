@@ -1,0 +1,88 @@
+Using pip 24.3.1 from C:\Users\Vostro\BiasBuster_v2\env\Lib\site-packages\pip (python 3.13)
+Collecting transformers
+  Obtaining dependency information for transformers from https://files.pythonhosted.org/packages/20/37/1f29af63e9c30156a3ed6ebc2754077016577c094f31de7b2631e5d379eb/transformers-4.49.0-py3-none-any.whl.metadata
+  Using cached transformers-4.49.0-py3-none-any.whl.metadata (44 kB)
+Collecting sentencepiece
+  Using cached sentencepiece-0.2.0.tar.gz (2.6 MB)
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Using pip 24.3.1 from C:\Users\Vostro\BiasBuster_v2\env\Lib\site-packages\pip (python 3.13)
+  Collecting setuptools>=40.8.0
+    Obtaining dependency information for setuptools>=40.8.0 from https://files.pythonhosted.org/packages/37/66/d2d7e6ad554f3a7c7297c3f8ef6e22643ad3d35ef5c63bf488bc89f32f31/setuptools-76.0.0-py3-none-any.whl.metadata
+    Using cached setuptools-76.0.0-py3-none-any.whl.metadata (6.7 kB)
+  Using cached setuptools-76.0.0-py3-none-any.whl (1.2 MB)
+  Installing collected packages: setuptools
+  Successfully installed setuptools-76.0.0
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Running command Getting requirements to build wheel
+  Traceback (most recent call last):
+    File "C:\Users\Vostro\BiasBuster_v2\env\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 353, in <module>
+      main()
+      ~~~~^^
+    File "C:\Users\Vostro\BiasBuster_v2\env\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 335, in main
+      json_out['return_val'] = hook(**hook_input['kwargs'])
+                               ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Vostro\BiasBuster_v2\env\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 118, in get_requires_for_build_wheel
+      return hook(config_settings)
+    File "C:\Users\Vostro\AppData\Local\Temp\pip-build-env-osy_1n53\overlay\Lib\site-packages\setuptools\build_meta.py", line 334, in get_requires_for_build_wheel
+      return self._get_build_requires(config_settings, requirements=[])
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Vostro\AppData\Local\Temp\pip-build-env-osy_1n53\overlay\Lib\site-packages\setuptools\build_meta.py", line 304, in _get_build_requires
+      self.run_setup()
+      ~~~~~~~~~~~~~~^^
+    File "C:\Users\Vostro\AppData\Local\Temp\pip-build-env-osy_1n53\overlay\Lib\site-packages\setuptools\build_meta.py", line 522, in run_setup
+      super().run_setup(setup_script=setup_script)
+      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Vostro\AppData\Local\Temp\pip-build-env-osy_1n53\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
+      exec(code, locals())
+      ~~~~^^^^^^^^^^^^^^^^
+    File "<string>", line 128, in <module>
+    File "C:\Users\Vostro\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 416, in check_call
+      retcode = call(*popenargs, **kwargs)
+    File "C:\Users\Vostro\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 397, in call
+      with Popen(*popenargs, **kwargs) as p:
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Vostro\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1038, in __init__
+      self._execute_child(args, executable, preexec_fn, close_fds,
+      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          pass_fds, cwd, env,
+                          ^^^^^^^^^^^^^^^^^^^
+      ...<5 lines>...
+                          gid, gids, uid, umask,
+                          ^^^^^^^^^^^^^^^^^^^^^^
+                          start_new_session, process_group)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Vostro\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1550, in _execute_child
+      hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                               # no special security
+                               ^^^^^^^^^^^^^^^^^^^^^
+      ...<4 lines>...
+                               cwd,
+                               ^^^^
+                               startupinfo)
+                               ^^^^^^^^^^^^
+  FileNotFoundError: [WinError 2] The system cannot find the file specified
+  error: subprocess-exited-with-error
+  
+  Getting requirements to build wheel did not run successfully.
+  exit code: 1
+  
+  See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: 'C:\Users\Vostro\BiasBuster_v2\env\Scripts\python.exe' 'C:\Users\Vostro\BiasBuster_v2\env\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py' get_requires_for_build_wheel 'C:\Users\Vostro\AppData\Local\Temp\tmpfcu0ameb'
+  cwd: C:\Users\Vostro\AppData\Local\Temp\pip-install-jr2xvk96\sentencepiece_89c649e65b714ccb9c549ed70d8dd9f6
+  Getting requirements to build wheel: finished with status 'error'
+
+[notice] A new release of pip is available: 24.3.1 -> 25.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+error: subprocess-exited-with-error
+
+Getting requirements to build wheel did not run successfully.
+exit code: 1
+
+See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
